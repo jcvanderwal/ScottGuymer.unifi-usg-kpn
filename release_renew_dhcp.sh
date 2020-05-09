@@ -7,6 +7,8 @@ then
     touch $LOG_FILE
 fi
 
+configure
+
 echo $(date) "Show DHCP lease before renew" >> $LOG_FILE
 /bin/vbash -ic 'show dhcp client leases' &>> $LOG_FILE
 echo $(date) "Release DHCP lease" >> $LOG_FILE
