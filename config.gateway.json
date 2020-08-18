@@ -142,6 +142,12 @@
   "system": {
     "task-scheduler": {
       "task": {
+        "igmp": {
+          "executable": {
+            "path": "/config/scripts/post-config.d/igmpcheck.sh"
+          },
+          "interval": "1m"
+        },
         "iptv": {
           "executable": {
             "path": "/config/scripts/post-config.d/update_iptv_route.sh"
