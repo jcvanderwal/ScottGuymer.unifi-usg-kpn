@@ -11,7 +11,7 @@ fi
 pidof igmpproxy >/dev/null
 if [[ $? -ne 0 ]] ; then
     {
-      echo" $(date)" "igmp-proxy not started" 
+      echo "$(date)" "igmp-proxy not started" 
       echo "$(date)" "Running config-igmpproxy.pl" 
       /opt/vyatta/sbin/config-igmpproxy.pl --action=restart
     } >> $LOG_FILE
